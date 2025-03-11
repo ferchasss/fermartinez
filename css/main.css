@@ -6,6 +6,12 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 @import url('scroll.css');
 
+:root {
+    --background-color: #1919c0;
+    --text-color: #b1c019;
+    --font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+}
+
 html {
     /* 
     * box-sizing
@@ -21,7 +27,7 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: var(--font-family);
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -29,7 +35,8 @@ body {
     /* mobile. Tamaño mínimo recomendado */
     font-size: 14px;
     line-height: 1.4em;
-    background-color: #e8e8e8;
+    background-color: var(--background-color);
+    color: var(--text-color);
     overflow-x: hidden;
 }
 
@@ -96,13 +103,13 @@ nav ul li {
 }
 
 a.box-link {
-    color: #000;
+    color: var(--background-color);
     font-weight: 600;
     text-decoration: none;
     padding: 0.25em .5em;
     text-transform: uppercase;
     min-width: 42px;
-    background-color: #fff;
+    background-color:var(--text-color);
     transition: all 300ms ease-out;
 }
 
@@ -135,4 +142,7 @@ p {
 
 nav.container {
     padding: 1em;
+}
+a {
+    color: var(--text-color);
 }

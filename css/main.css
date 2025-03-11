@@ -9,9 +9,8 @@
 :root {
     --background-color: #1919c0;
     --text-color: #b1c019;
-    --font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+    --font-family: "kensington", sans-serif
 }
-
 html {
     /* 
     * box-sizing

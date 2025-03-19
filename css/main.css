@@ -7,8 +7,8 @@
 @import url('scroll.css');
 
 :root {
-    --background-color: #1919c0;
-    --text-color: #b1c019;
+    --background-color: #ffc5f2;
+    --text-color: #1919c0;
     --font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 html {
     /* 

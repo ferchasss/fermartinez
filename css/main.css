@@ -9,7 +9,9 @@
 :root {
     --background-color: #ffc5f2;
     --text-color: #1919c0;
-    --font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+    --font-family:"chalfont", sans-serif; 
+    --font-body:"chalfont", sans-serif;
+}
 html {
     /* 
     * box-sizing
@@ -25,7 +27,9 @@ html {
 }
 
 body {
-    font-family: var(--font-family);
+    font-family: var(--font-body);
+    font-style: normal;
+    font-weight: 300;
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -48,17 +52,20 @@ body {
 /* Escritorio */
 @media (min-width: 1024px) {
     body {
-      font-size: 18px;
+      font-size: 20px;
     }
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var();
+    
     line-height: 1.1em;
+   
 }
 
 h1 {
-    font-size: 2.5em;
+    font-family: var(--font-family);
+    font-size: 80px;
+    font-style: italic;
 }
 
 h2 {
@@ -87,6 +94,7 @@ img {
 
 header {
     width: 100%;
+  
 }
 
 nav ul {
